@@ -1,7 +1,7 @@
-# **2025-ADVDBMS-LAB003**
+2025-ADVDBMS-WK02S02E01
 Week 02 - Review on Database Concepts
 
-Laboratory # 03 - Guided Coding Exercise: Database Creation and Management
+Exercise # 01 - Guided Coding Exercise: Database Creation and Management
 
 ## **Instructions**
 
@@ -77,7 +77,7 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Laboratory # 03 - Guided Coding Exercise: Database Creation and Management**
+**Exercise # 01 - Guided Coding Exercise: Database Creation and Management**
 
    **Objective:**
    Learn to create, use, and drop a database using SQL. This exercise will introduce basic SQL commands and file management practices for database development.
@@ -94,21 +94,13 @@ Only perform this if this is the first time you will setup your Git Environment
    - `drop_db.sql`: Contains the SQL statement for dropping the database.
 
    **Notable Observations (to be discussed after completing the exercise):**
-   - Consistency is Key: Maintain consistent casing for database and table names to avoid potential issues.
-   - Handle with Care: Dropping a database is irreversible. Use the IF EXISTS clause and double-check before executing.
-   - Verification Matters: Use SELECT DATABASE(); (or equivalent) to confirm the active database.
-   - Planning Ahead: This exercise is the foundation. Think about the tables needed (students, courses, etc.) before creating the database.
-   - Dialect Differences: SQL syntax can vary slightly between database systems (MySQL, PostgreSQL, etc.).
-
-   **SQL Script Best Practices**
-   - Comments: Use comments (--) to explain the purpose of your SQL code. This improves readability and maintainability. Crucial for learning!
-   - File Organization: Separate SQL scripts for different tasks (create, drop, etc.) promotes organization.
-   - IF EXISTS Clause: Always use IF EXISTS when dropping databases or tables to prevent errors.
-   - Explicit USE: Clearly specify USE <database_name>; to ensure you're working in the correct database.
-   - Modular Design: Break down complex tasks into smaller, manageable scripts.
-   - Version Control: Consider using version control (like Git) to track changes to your SQL scripts.
-   - Indentation and Formatting: Use consistent indentation and formatting to make your SQL code easier to read.
-
+   - **Case Sensitivity:** Database and table names might be case-sensitive depending on your SQL system. It's good practice to be consistent with casing.
+   - **Error Handling:** In a real application, you would want to add more robust error handling (e.g., checking if the database already exists before creating it).
+   - **Database Design:** This exercise only covers creating and dropping the database. The next step would be to design the tables within the `UniversityDB` to store information about students, courses, instructors, etc.
+   - **SQL Syntax:** The SQL syntax might vary slightly between different database systems. Refer to the documentation for your specific DBMS.
+   - `IF EXISTS` **Clause:** The `IF EXISTS` clause in the `DROP DATABASE` statement is a good practice to prevent errors if the database doesn't exist.
+   - **Verification:** The `SELECT DATABASE();` (or equivalent) statement is a useful way to confirm which database is currently being used.
+      
    **Step-by-Step Instructions:**
 
    1. Setting up the Environment
